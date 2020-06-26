@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edytowanie...{% endblock %}
+
+{% block body %}
+    <h1>Edytuj Artykuł</h1>
+
+    {{ include('categoryy/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a class="btn btn-secondary" href="{{ path('main') }}">Powrót</a>
+
+    {{ include('categoryy/_delete_form.html.twig') }}
+{% endblock %}
